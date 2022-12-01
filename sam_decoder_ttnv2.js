@@ -253,6 +253,16 @@ function decodeUplink(input) {
 }
 
 /*
+var base64_string = "fS0l4js9eZEXWzCtcWjHkXp7Dc3gc6itU7qVmg=="
+let buff = new Buffer(base64_string, 'base64');
+let text = buff.toJSON().data;
+
+var data = {
+    bytes : text
+};
+var result = decodeUplink(data);
+console.log(result);
+
  Demo data
 
 // TTN
