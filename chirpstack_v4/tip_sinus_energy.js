@@ -169,7 +169,7 @@ function decodeUplink(input) {
     }
     // check for periodic signal
     else if (fCtrl == 0x0a) {
-        decoded.type = 'periodic';
+        decoded.type = 'telemetry';
         // get the register in the telegram
         decoded.registerCount = cmdId;
 
